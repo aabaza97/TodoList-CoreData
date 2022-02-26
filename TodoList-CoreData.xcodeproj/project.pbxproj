@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC17413B27CA5A7500FF92C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17413A27CA5A7500FF92C3 /* AppDelegate.swift */; };
 		AC17413D27CA5A7500FF92C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17413C27CA5A7500FF92C3 /* SceneDelegate.swift */; };
-		AC17413F27CA5A7500FF92C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17413E27CA5A7500FF92C3 /* ViewController.swift */; };
+		AC17413F27CA5A7500FF92C3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17413E27CA5A7500FF92C3 /* ListViewController.swift */; };
 		AC17414227CA5A7500FF92C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17414027CA5A7500FF92C3 /* Main.storyboard */; };
 		AC17414527CA5A7500FF92C3 /* TodoList_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC17414327CA5A7500FF92C3 /* TodoList_CoreData.xcdatamodeld */; };
 		AC17414727CA5A7600FF92C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC17414627CA5A7600FF92C3 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		AC17413727CA5A7500FF92C3 /* TodoList-CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TodoList-CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC17413A27CA5A7500FF92C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC17413C27CA5A7500FF92C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC17413E27CA5A7500FF92C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC17413E27CA5A7500FF92C3 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		AC17414127CA5A7500FF92C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC17414427CA5A7500FF92C3 /* TodoList_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoList_CoreData.xcdatamodel; sourceTree = "<group>"; };
 		AC17414627CA5A7600FF92C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,16 +58,48 @@
 		AC17413927CA5A7500FF92C3 /* TodoList-CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				AC17413A27CA5A7500FF92C3 /* AppDelegate.swift */,
-				AC17413C27CA5A7500FF92C3 /* SceneDelegate.swift */,
-				AC17413E27CA5A7500FF92C3 /* ViewController.swift */,
-				AC17414027CA5A7500FF92C3 /* Main.storyboard */,
+				AC17415427CA5D4800FF92C3 /* View */,
+				AC17415327CA5D4100FF92C3 /* Controller */,
+				AC17415227CA5CBC00FF92C3 /* DataLayer */,
+				AC17415127CA5CA900FF92C3 /* SupportingFiles */,
 				AC17414627CA5A7600FF92C3 /* Assets.xcassets */,
-				AC17414827CA5A7600FF92C3 /* LaunchScreen.storyboard */,
 				AC17414B27CA5A7600FF92C3 /* Info.plist */,
-				AC17414327CA5A7500FF92C3 /* TodoList_CoreData.xcdatamodeld */,
 			);
 			path = "TodoList-CoreData";
+			sourceTree = "<group>";
+		};
+		AC17415127CA5CA900FF92C3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AC17413A27CA5A7500FF92C3 /* AppDelegate.swift */,
+				AC17413C27CA5A7500FF92C3 /* SceneDelegate.swift */,
+				AC17414827CA5A7600FF92C3 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AC17415227CA5CBC00FF92C3 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AC17414327CA5A7500FF92C3 /* TodoList_CoreData.xcdatamodeld */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		AC17415327CA5D4100FF92C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC17413E27CA5A7500FF92C3 /* ListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC17415427CA5D4800FF92C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC17414027CA5A7500FF92C3 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC17413F27CA5A7500FF92C3 /* ViewController.swift in Sources */,
+				AC17413F27CA5A7500FF92C3 /* ListViewController.swift in Sources */,
 				AC17413B27CA5A7500FF92C3 /* AppDelegate.swift in Sources */,
 				AC17414527CA5A7500FF92C3 /* TodoList_CoreData.xcdatamodeld in Sources */,
 				AC17413D27CA5A7500FF92C3 /* SceneDelegate.swift in Sources */,
